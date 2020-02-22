@@ -83,3 +83,6 @@ def hotpepper(push_text):
 
    except:
        return "API接続中に何らかのエラーが発生しました"
+      
+msg = hotpepper("「新宿駅」5000円居酒屋")
+print(msg)
