@@ -26,7 +26,7 @@ def hotpepper(push_text):
    genre_name = ["居酒屋", "ダイニングバー・バル", "創作料理", "和食", "洋食", "イタリアン・フレンチ", "中華", "焼肉", \
                  "韓国料理", "アジア・エスニック料理", "各国料理", "カラオケ・パーティ", "バー・カクテル", "ラーメン", \
                  "お好み焼き・もんじゃ", "カフェ・スイーツ", "その他グルメ"]
-   genre_number = ["G001", "G002", "G003", "G004", "G005", "G006", "G007", "G008", "G017", "G009", "G010", "G011", \
+   genre_number = ["G001", "G002", "Ghotpepper003", "G004", "G005", "G006", "G007", "G008", "G017", "G009", "G010", "G011", \
                    "G012", "G013", "G016", "G014", "G015"]
    genre_dict = dict(zip(genre_name, genre_number))
    genre = [i for i in genre_name if i in push_text]
@@ -39,7 +39,7 @@ def hotpepper(push_text):
    budget_search = re.search('(\d{3,5})円', push_text)
 
    url = "https://webservice.recruit.co.jp/hotpepper/gourmet/v1/"
-   params = {'key': '6cb4872b41f2afb5',
+   params = {'key': '39aec29f7ed37790',
              'format': 'json',
              'lat': latitude,
              'lng': longitude,
