@@ -39,12 +39,11 @@ def callback():
 
    return 'OK'
 
-
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-   push_text = event.message.text
-   msg = hotpepper(push_text)
-   line_bot_api.reply_message(event.reply_token, TextSendMessage(text=msg))
+   line_bot_api.reply_message(
+       event.reply_token,
+       TextSendMessage(text=event.message.text))
 
 if __name__ == "__main__":
 #    app.run()
