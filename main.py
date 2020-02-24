@@ -43,7 +43,7 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
    push_text = event.message.text
-   msg = core.hotpepper(push_text)
+   msg = hotpepper(push_text)
    line_bot_api.reply_message(event.reply_token, TextSendMessage(text=msg))
 
 if __name__ == "__main__":
