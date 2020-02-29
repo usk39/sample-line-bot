@@ -43,7 +43,7 @@ def hotpepper(push_text):
              'format': 'json',
              'lat': latitude,
              'lng': longitude,
-             'range': '3',
+             'range': '4',
              }
 
    if budget_search:
