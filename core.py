@@ -44,6 +44,8 @@ def hotpepper(push_text):
              'lat': latitude,
              'lng': longitude,
              'range': '3',
+             'start': '1',
+             'count': '15',
              }
 
    if budget_search:
